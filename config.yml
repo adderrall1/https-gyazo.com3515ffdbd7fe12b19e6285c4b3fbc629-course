@@ -1,0 +1,16 @@
+title: 'https://gyazo.com/3515ffdbd7fe12b19e6285c4b3fbc629'
+description: 'https://gyazo.com/3515ffdbd7fe12b19e6285c4b3fbc629'
+template:
+  repo: 'https:gyazo.com3515ffdbd7fe12b19e6285c4b3fbc629-template'
+  name: 'https:gyazo.com3515ffdbd7fe12b19e6285c4b3fbc629'
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
